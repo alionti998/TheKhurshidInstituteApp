@@ -1,0 +1,56 @@
+:root {
+  --ki-custom-navy: #0A1A3A;
+  --ki-custom-gold: #D4A037;
+  --ki-custom-medium-gold: #C08A2E;
+  --ki-custom-light-gold: #E8D7A8;
+  --ki-custom-white: #FFFFFF;
+
+  /* Accessible variants */
+  --ki-custom-navy-contrast: #071226;
+  --ki-custom-gold-dark: #A67F2C;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--ki-custom-navy) !important;
+}
+.navbar-brand,
+.nav-link {
+  color: var(--ki-custom-gold) !important;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: var(--ki-custom-light-gold) !important;
+}
+.khurshid-nav-logo {
+  height: 48px;
+  width: auto;
+}
+@media (max-width: 576px) {
+  .khurshid-nav-logo {
+    height: 36px;
+  }
+}
+.khurshid-hero-banner {
+    background-color: var(--ki-custom-navy);
+    padding: 40px 0;
+    text-align: center;
+}
+.khurshid-shield-full {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.khurshid-section-logo {
+  height: 32px;
+  width: auto;
+}
+.khurshid-footer-logo {
+  height: 40px;
+  width: auto;
+  opacity: 0.85;
+}
