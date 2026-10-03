@@ -14,43 +14,148 @@
 .navbar {
   background-color: var(--ki-custom-navy) !important;
 }
+
 .navbar-brand,
 .nav-link {
   color: var(--ki-custom-gold) !important;
 }
+
 .navbar-brand {
   font-weight: bold;
 }
+
 .nav-link:hover {
   color: var(--ki-custom-light-gold) !important;
 }
+
 .khurshid-nav-logo {
   height: 48px;
   width: auto;
 }
+
 @media (max-width: 576px) {
   .khurshid-nav-logo {
     height: 36px;
   }
 }
+
+.navbar .dropdown-menu {
+  background-color: var(--ki-custom-navy);
+  border: 1px solid var(--ki-custom-medium-gold);
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+
+.navbar .dropdown-item {
+  color: var(--ki-custom-light-gold);
+  padding: 0.5rem 1rem;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background-color: var(--ki-custom-medium-gold);
+  color: var(--ki-custom-white);
+  outline: none;
+}
+
+.navbar .dropdown-item.active {
+  background-color: var(--ki-custom-gold);
+  color: var(--ki-custom-navy);
+}
+
+.navbar .dropdown-toggle {
+  color: var(--ki-custom-gold) !important;
+}
+
+.navbar .dropdown-toggle::after {
+  border-top-color: var(--ki-custom-gold);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.khurshid-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.khurshid-content {
+  flex: 1 0 auto;
+}
+
 .khurshid-hero-banner {
-    background-color: var(--ki-custom-navy);
-    padding: 40px 0;
-    text-align: center;
+  background-color: var(--ki-custom-navy);
+  padding: 40px 0;
+  text-align: center;
 }
+
 .khurshid-shield-full {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 900px;
-    margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
+
 .khurshid-section-logo {
   height: 32px;
   width: auto;
 }
-.khurshid-footer-logo {
-  height: 40px;
-  width: auto;
-  opacity: 0.85;
+
+.khurshid-header {
+  border-bottom: 3px solid var(--ki-custom-medium-gold);
+}
+
+.khurshid-footer {
+  flex-shrink: 0;
+  background-color: var(--ki-custom-navy);
+  color: var(--ki-custom-light-gold);
+  border-top: 3px solid var(--ki-custom-medium-gold);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.khurshid-footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.footer-separator {
+  color: var(--ki-custom-gold);
+  font-weight: bold;
+}
+
+.khurshid-footer-contact i {
+  color: var(--ki-custom-gold);
+  margin-right: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.khurshid-footer-copy {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.khurshid-footer a {
+  color: var(--ki-custom-light-gold);
+  text-decoration: none;
+}
+
+.khurshid-footer a:hover,
+.khurshid-footer a:focus {
+  color: var(--ki-custom-white);
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .khurshid-footer-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }

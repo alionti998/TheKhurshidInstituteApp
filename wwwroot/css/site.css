@@ -74,3 +74,10 @@ a:hover {
 .bullet-content {
   font-style: italic;
 }
+
+ul.additional-style {
+  list-style: none !important;
+  list-style-type: none !important;
+  padding: 0;
+  margin: 0;
+}
