@@ -15,17 +15,28 @@
   background-color: var(--ki-custom-navy) !important;
 }
 
-.navbar-brand,
-.nav-link {
-  color: var(--ki-custom-gold) !important;
-}
-
 .navbar-brand {
   font-weight: bold;
 }
 
-.nav-link:hover {
+.navbar-brand,
+.navbar .nav-link {
+  color: var(--ki-custom-gold) !important;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
   color: var(--ki-custom-light-gold) !important;
+}
+
+.navbar .nav-link:focus {
+  color: var(--ki-custom-light-gold) !important;
+  outline: 2px solid var(--ki-custom-gold);
+  outline-offset: 2px;
+}
+
+.navbar .nav-link:active {
+  color: var(--ki-custom-gold) !important;
 }
 
 .khurshid-nav-logo {
@@ -49,6 +60,7 @@
 .navbar .dropdown-item {
   color: var(--ki-custom-light-gold);
   padding: 0.5rem 1rem;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .navbar .dropdown-item:hover,
@@ -64,14 +76,15 @@
 }
 
 .navbar .dropdown-toggle {
-  color: var(--ki-custom-gold) !important;
+  color: var(--ki-custom-gold);
 }
 
 .navbar .dropdown-toggle::after {
   border-top-color: var(--ki-custom-gold);
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -107,6 +120,7 @@ html, body {
 
 .khurshid-header {
   border-bottom: 3px solid var(--ki-custom-medium-gold);
+  font-weight: bold;
 }
 
 .khurshid-footer {
@@ -123,6 +137,7 @@ html, body {
   align-items: center;
   gap: 1rem;
   font-size: 1rem;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .footer-separator {
@@ -137,7 +152,8 @@ html, body {
 }
 
 .khurshid-footer-copy {
-  font-size: 0.95rem;
+  font-weight: bold;
+  font-size: 1rem;
   margin-top: 0.5rem;
 }
 
